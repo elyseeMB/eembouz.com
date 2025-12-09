@@ -18,7 +18,55 @@
     "url": "https://eembouz.com/",
     "logo": "https://eembouz.com/favicon-512.png"
   }
-</script><script type="module" src="/_astro/Scripts.astro_astro_type_script_index_0_lang.aGaW5m6J.js"></script><link rel="stylesheet" href="/_astro/505.BzgNWU78.css"></head> <body data-astro-cid-sckkx6r4> <div class="effect-blur pointer-events-none fixed inset-0 z-50 h-10 w-screen md:h-16"></div> <div class="from-background pointer-events-none fixed inset-0 z-50 h-4 w-screen bg-gradient-to-b to-transparent"></div> <div class="bg-noise" data-astro-cid-sckkx6r4> <div class="page-wrapper" data-astro-cid-sckkx6r4> <div class="container-narrow" data-astro-cid-j2devmb2> <header data-astro-cid-6sev2il6> <div class="container" data-astro-cid-6sev2il6> <div class="wrapper" data-astro-cid-6sev2il6> <div class="flex" data-astro-cid-6sev2il6> <div class="logo" data-astro-cid-6sev2il6> <a href="https://eembouz.com/en">  <svg width="40" height="40" id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" data-astro-cid-6sev2il6> <defs data-astro-cid-6sev2il6> <style>
+</script><script type="module" src="/_astro/Scripts.astro_astro_type_script_index_0_lang.B4FzPvFJ.js"></script><script data-default-theme="auto">
+  window.theme ??= (() => {
+    const defaultTheme =
+      document.currentScript.getAttribute("data-default-theme");
+    const storageKey = "theme";
+    const store =
+      typeof localStorage !== "undefined"
+        ? localStorage
+        : { getItem: () => null, setItem: () => {} };
+
+    const mediaMatcher = window.matchMedia("(prefers-color-scheme: light)");
+    let systemTheme = mediaMatcher.matches ? "light" : "dark";
+    mediaMatcher.addEventListener("change", (event) => {
+      systemTheme = event.matches ? "light" : "dark";
+      applyTheme(getTheme());
+    });
+
+    function applyTheme(theme) {
+      const resolvedTheme = theme === "auto" ? systemTheme : theme;
+      document.documentElement.dataset.theme = resolvedTheme;
+      document.documentElement.style.colorScheme = resolvedTheme;
+      document.dispatchEvent(
+        new CustomEvent("theme-changed", {
+          detail: { theme, systemTheme, defaultTheme },
+        })
+      );
+    }
+
+    function setTheme(theme = defaultTheme) {
+      store.setItem(storageKey, theme);
+      applyTheme(theme);
+    }
+
+    function getTheme() {
+      return store.getItem(storageKey) || defaultTheme;
+    }
+
+    function getSystemTheme() {
+      return systemTheme;
+    }
+
+    function getDefaultTheme() {
+      return defaultTheme;
+    }
+
+    return { setTheme, getTheme, getSystemTheme, getDefaultTheme };
+  })();
+  theme.setTheme(theme.getTheme());
+</script> <script type="module">document.addEventListener("astro:after-swap",()=>window.theme.setTheme(window.theme.getTheme()));</script><link rel="stylesheet" href="/_astro/505.BITO3D9h.css"></head> <body data-astro-cid-sckkx6r4> <div class="effect-blur pointer-events-none fixed inset-0 z-50 h-10 w-screen md:h-16"></div> <div class="from-background pointer-events-none fixed inset-0 z-50 h-4 w-screen bg-gradient-to-b to-transparent"></div> <div class="bg-noise" data-astro-cid-sckkx6r4> <div class="page-wrapper" data-astro-cid-sckkx6r4> <div class="container-narrow" data-astro-cid-j2devmb2> <header data-astro-cid-6sev2il6> <div class="container" data-astro-cid-6sev2il6> <div class="wrapper" data-astro-cid-6sev2il6> <div class="flex" data-astro-cid-6sev2il6> <div class="logo" data-astro-cid-6sev2il6> <a href="https://eembouz.com/en">  <svg width="40" height="40" id="logo" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" data-astro-cid-6sev2il6> <defs data-astro-cid-6sev2il6> <style>
                   .cls-1,
                   .cls-2 {
                     stroke-width: 0px;
@@ -29,4 +77,4 @@
                   }
                 </style> </defs> <circle class="cls-2" cx="6" cy="6" r="5.5" data-astro-cid-6sev2il6></circle> <path class="cls-1" d="m6,1c2.76,0,5,2.24,5,5s-2.24,5-5,5S1,8.76,1,6,3.24,1,6,1m0-1C2.69,0,0,2.69,0,6s2.69,6,6,6,6-2.69,6-6S9.31,0,6,0h0Z" data-astro-cid-6sev2il6></path> </svg> </a> </div>  <div class="actions" data-astro-cid-j2devmb2> <a href="https://blog.eembouz.com" data-astro-cid-j2devmb2>Blog</a> <button class="btn btn-primary" data-astro-cid-j2devmb2> <a href="mailto:contact@eembouz.com" data-astro-cid-j2devmb2> Contact me </a> </button> </div>  </div> </div> </div> </header>  </div>   <div class="container"> <div class="wrapper"> <div> Unknown error<div></div> </div> </div> </div>  <div class="container-narrow"> <footer data-astro-cid-bbsqf2va> <div class="container" data-astro-cid-bbsqf2va> <div class="grid" data-astro-cid-bbsqf2va> <div class="left" data-astro-cid-bbsqf2va> <div class="info" data-astro-cid-bbsqf2va> <h4 data-astro-cid-bbsqf2va>About</h4> <p data-astro-cid-bbsqf2va> Trained as a network and telecom engineer, I have developed complementary expertise in software infrastructure and development. </p> </div> <div class="extra" data-astro-cid-bbsqf2va> <div class="contacts" data-astro-cid-bbsqf2va> <h4 data-astro-cid-bbsqf2va>Contact</h4>
             <ul class="links" data-astro-cid-bbsqf2va> <a href="mailto:contact@eembouz.com" data-astro-cid-bbsqf2va> <li data-astro-cid-bbsqf2va> contact@eembouz.com </li> </a> </ul> </div> <div class="legacy" data-astro-cid-bbsqf2va> <a href="https://eembouz.com/en"> eembouz.com </a> <span class="declaration" data-astro-cid-bbsqf2va>Copyright © 2025 elysee Mboussa . All rights reserved.</span> </div> </div> </div> <div class="right" data-astro-cid-bbsqf2va> <div class="contact" data-astro-cid-bbsqf2va> <div class="info" data-astro-cid-bbsqf2va> <h4 data-astro-cid-bbsqf2va>Networking </h4>
-              <ul class="links" data-astro-cid-bbsqf2va> <a href="https://github.com/elyseeMB" data-astro-cid-bbsqf2va> <li data-astro-cid-bbsqf2va> Github </li> </a><a href="https://www.linkedin.com/in/%CE%BEmmanuelito-mboussa-49099932a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" data-astro-cid-bbsqf2va> <li data-astro-cid-bbsqf2va> Linkedin </li> </a> </ul> </div> </div> </div> </div> </div> </footer>  </div> </div> </div> <meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BwNvaGLp.js"></script>  <script type="module">const i=["en","zh"];function l(t,n){if(n.length!==1)throw new Error("Char must be single character");if(t==null||t.length===0)return t;const a=n.charCodeAt(0);let e=0,r=t.length-1;for(;e<=r&&t.charCodeAt(e)===a;)e++;for(;r>=e&&t.charCodeAt(r)===a;)r--;return t.slice(e,r+1)}function c(){const t=localStorage.getItem("lang"),n=window.location.pathname,a=navigator.language.split("-")[0].toLowerCase(),e=n.split("/")[1];if(i.includes(e)&&e!=="fr"){localStorage.setItem("lang",e);return}if(t){t!=="fr"&&!n.startsWith("/"+t)&&(window.location.href="/"+l(t+n,"/"));return}let o="fr";i.includes(a)?o=a:a!=="fr"&&(o="en"),localStorage.setItem("lang",o),o!=="fr"&&!n.startsWith("/"+o)&&(window.location.href="/"+l(o+n,"/"))}c();</script></body></html>
+              <ul class="links" data-astro-cid-bbsqf2va> <a href="https://github.com/elyseeMB" data-astro-cid-bbsqf2va> <li data-astro-cid-bbsqf2va> Github </li> </a><a href="https://www.linkedin.com/in/%CE%BEmmanuelito-mboussa-49099932a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" data-astro-cid-bbsqf2va> <li data-astro-cid-bbsqf2va> Linkedin </li> </a> </ul> </div> </div> </div> </div> </div> </footer>  </div> </div> </div> <meta name="astro-view-transitions-enabled" content="true"><meta name="astro-view-transitions-fallback" content="animate"><script type="module" src="/_astro/ClientRouter.astro_astro_type_script_index_0_lang.BwNvaGLp.js"></script>  <script type="module">const l=["en","zh"];function i(e,n){if(n.length!==1)throw new Error("Char must be single character");if(e==null||e.length===0)return e;const a=n.charCodeAt(0);let t=0,o=e.length-1;for(;t<=o&&e.charCodeAt(t)===a;)t++;for(;o>=t&&e.charCodeAt(o)===a;)o--;return e.slice(t,o+1)}function c(){const e=localStorage.getItem("lang"),n=window.location.pathname,a=navigator.language.split("-")[0].toLowerCase(),t=n.split("/")[1];if(l.includes(t)&&t!=="fr"){localStorage.setItem("lang",t);return}if(e){e!=="fr"&&!n.startsWith("/"+e)&&(window.location.href="/"+i(e+n,"/"));return}let r="fr";l.includes(a)?r=a:a!=="fr"&&(r="en"),localStorage.setItem("lang",r),r!=="fr"&&!n.startsWith("/"+r)&&(window.location.href="/"+i(r+n,"/"))}c();document.addEventListener("astro:page-load",()=>{window.matchMedia("(prefers-color-scheme: dark)").matches&&(document.documentElement.classList.add("dark"),document.documentElement.style.colorScheme="dark")});</script></body></html>
