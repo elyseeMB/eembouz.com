@@ -1,0 +1,1 @@
+import{o as a}from"./client.Dro3Yt0u.js";a(()=>{const e=document.getElementById("footer-year");e&&(e.innerText=new Date().getFullYear().toString())});document.addEventListener("change",e=>{const t=e.target;t?.matches?.("select[data-language-select]")&&(window.location.href=t.value)});

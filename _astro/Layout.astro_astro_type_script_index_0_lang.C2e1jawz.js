@@ -1,0 +1,1 @@
+import{o as e}from"./client.Dro3Yt0u.js";e(()=>{window.matchMedia("(prefers-color-scheme: dark)").matches&&(document.documentElement.classList.add("dark"),document.documentElement.style.colorScheme="dark")});
